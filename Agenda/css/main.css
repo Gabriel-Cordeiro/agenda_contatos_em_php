@@ -1,0 +1,126 @@
+
+/* LAYOUT */
+
+body{
+	background: url(../img/img4.jpg);
+	background-size: cover;
+	background-position: center;
+	/*background-repeat: no-repeat;*/
+	font-family: sans-serif;
+	margin:0;
+	padding: 0;
+	border: 0;
+    
+}
+
+.login-box{
+	width: 320px;
+	height: 420px;
+	background: rgba(0, 0, 0,0.5);
+	color: #fff;
+	left: 35%;
+	top:20%;
+	position: absolute;
+	/* transform: translate(-50%,-50%); */
+	/*box-sizing: border-box;*/
+}
+.avatar{
+	width: 100px;
+	height: 100px;
+	/*border-radius: 50%;*/
+	position: absolute;
+	top:-60px;
+	left: 100px;
+}
+h2{
+
+	padding: 0 0 20px;
+	color: whitesmoke;
+	text-align: center;
+	font-size: 22px;
+}
+.login-box p{
+margin: 0;
+padding: 0;
+font-weight: bold;
+color: White;
+}
+.login-box input[type="text"],[type="password"]{
+border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+color: white;
+height: 40px;
+outline: none;
+}
+.login-box input[type="submit"]{
+border: none;
+background: #1c8adb;
+color: #fff;
+height: 40px;
+width: 300px;
+font-size:18px;
+border-radius: 20px;
+}
+.formCadastro button[type="submit"]{
+border: none;
+background: #1c8adb;
+color: #fff;
+height: 40px;
+width: 300px;
+font-size:18px;
+margin-left: 150px;
+border-radius: 20px;
+}
+
+
+.login-box input[type="submit"]:hover,.formCadastro button[type="submit"]:hover{
+cursor: pointer;
+background: #39dc79;
+color: #000;
+}
+
+
+.login-box a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+
+}
+.login-box a:hover{
+	cursor: pointer;
+	color: #1c8adb;
+	
+}
+.formCadastro label{
+	
+	border:0;
+	margin:0;
+	margin-left: 50px;
+	color: white;
+	height: 20px;
+}
+.formCadastro input[type="text"]{
+height: 30px;
+margin-left: 50px;
+}
+.formCadastro input[type="text"]:hover{
+background-color: #BEBEBE;
+color: black;
+}
+.formCadastro{
+background: rgba(0, 0, 0,0.2);
+color: #fff;
+position: absolute;
+width: 50%;
+top:100px;
+left: 300px;	
+}
+.footer{
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	color: gray;
+	height: 50px;
+}

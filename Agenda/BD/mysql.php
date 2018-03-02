@@ -6,7 +6,7 @@ class mysql
     
     function Conecta()
     {
-    $connection =  mysqli_connect('127.0.0.1','root','','agenda_online');
+    $connection =  mysqli_connect('localhost','root','','agenda_online');
 
     if(!$connection)
     {
