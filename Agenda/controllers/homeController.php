@@ -13,7 +13,7 @@ class homeController
   {
     session_start();
     $_SESSION['id_usuario'] = $id_usuario;
-    header('Location: ../Views/novoContato.php');
+    header('Location: ../Views/home.php');
   
   }
 

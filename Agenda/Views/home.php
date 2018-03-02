@@ -14,41 +14,32 @@ $contatos = $contato->pegarContatosPorIdUsuario($id_usuario);
 <html>
 
 <head>
-
-<div>   </div>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title> Novo Contato </title>
+<link rel="stylesheet" href="../css/bootstrap.min.css"> 
+<link rel="stylesheet" href="../css/main.css"> 
+<link rel="icon" href="../img/contact.ico" >
+<?php include('../php/Header.php'); ?>
     <title> Bem vindo </title>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Agenda Online</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="home.php">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="novoContato.php">Novo Contato</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Contatos</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-</head>
+    
 
 <body>
 
+</head>
+
+<body>
+</br></br></br>
 <?php
+if(!empty($contatos))
+{
 foreach($contatos as $contato){
   ?>
 <form method="post" id="contatoEscolhido" action="../controllers/contatoController.php">
 <table class="table table-dark">
   <thead>
-    <tr>
+
+    <tr>  
       <th scope="col">Codigo Contato</th>
       <th scope="col">Nome</th>
       <th scope="col">Sobrenome</th>
@@ -59,7 +50,7 @@ foreach($contatos as $contato){
   </thead>
   <tbody>
     <tr>
-      <th scope="row"><?php echo $contato->id_contato?></th>
+      <th scope="row"><img src="../img/avatar.png" alt="Smiley face" height="42" width="42"><?php echo $contato->id_contato?></th>
       <td><?php echo $contato->nome?></td>
       <td><?php echo $contato->sobrenome?></td>
       <td><?php echo $contato->telefone?></td>
@@ -70,6 +61,7 @@ foreach($contatos as $contato){
 </table>
 </form>
 <?php
+}
 }?>
 
     <!-- <form method="POST" action="">
