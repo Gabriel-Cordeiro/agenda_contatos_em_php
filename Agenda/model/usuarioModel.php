@@ -24,7 +24,7 @@ class usuario
             setcookie("id_usuario",$id_usuario);
             //header("Location:../Views/home.php");
 
-            $connect->fechar();
+            $connect->fechar($connect->myCon);
           }
     }
 }

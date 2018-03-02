@@ -16,17 +16,17 @@ class mysql
     else{
 
         $this->myCon =  $connection;
-        echo "conexão realizada";
+        //echo "conexão realizada";
         return $this->myCon;
 
     }
         
     }
 
-    function fechar()
+    function fechar($myConnection)
     {
-        mysqli_close($myCon);
-        echo "conexão fechada";
+        mysqli_close($myConnection);
+        //echo "conexão fechada";
     }
 }
 
