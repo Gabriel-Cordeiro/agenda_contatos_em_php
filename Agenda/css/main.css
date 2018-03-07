@@ -217,7 +217,7 @@ text-align: center;
 }
 
 #contatoEscolhido table {
-	position: absolute;
+	/* position: absolute; */
 	background: whitesmoke;
 	color: black;
 	font-family: arial;

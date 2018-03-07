@@ -50,7 +50,7 @@ foreach($contatos as $contato){
   </thead>
   <tbody>
     <tr>
-      <th scope="row"><img src="../img/avatar.png" alt="Smiley face" height="42" width="42"><?php echo $contato->id_contato?></th>
+      <th><img src="../img/avatar.png" alt="Smiley face"><?php echo $contato->id_contato?></th>
       <td><?php echo $contato->nome?></td>
       <td><?php echo $contato->sobrenome?></td>
       <td><?php echo $contato->telefone?></td>
@@ -64,10 +64,6 @@ foreach($contatos as $contato){
 }
 }?>
 
-    <!-- <form method="POST" action="">
-        <label>Cadastrar novo contato</label>
-        <input type="submit" value="Novo contato" id="cadastrar_contato" name="cadastrar_contato">
-    </form> -->
 
 </body>
 
