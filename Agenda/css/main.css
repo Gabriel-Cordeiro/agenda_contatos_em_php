@@ -1,97 +1,43 @@
 
 /* LAYOUT */
-
-body{
-	background: url(../img/img4.jpg);
-	background-size: cover;
-	background-position: center;
-	/*background-repeat: no-repeat;*/
-	font-family: sans-serif;
-	margin:0;
-	padding: 0;
-	border: 0;
-    
-}
-
-.login-box{
-	width: 320px;
-	height: 420px;
-	background: rgba(0, 0, 0,0.5);
-	color: #fff;
-	left: 35%;
-	top:20%;
-	position: absolute;
-	/* transform: translate(-50%,-50%); */
-	/*box-sizing: border-box;*/
-}
 .avatar{
 	width: 100px;
 	height: 100px;
 	/*border-radius: 50%;*/
 	position: absolute;
 	top:-60px;
-	left: 100px;
+	left: 200px;
 }
-h2{
-
-	padding: 0 0 20px;
-	color: whitesmoke;
-	text-align: center;
-	font-size: 22px;
+body{
+	background: url(../img/img4.jpg);
+	background-size: cover;
+	background-position: center;
+	/*background-repeat: no-repeat;*/
+	font-family: Calibri (Corpo);
+	margin:0;
+	padding: 0;
+	border: 0;
 }
-.login-box p{
-margin: 0;
-padding: 0;
-font-weight: bold;
-color: White;
+body a{
+	margin-left: 110px;
 }
-.login-box input[type="text"],[type="password"]{
-border: none;
-border-bottom: 1px solid #fff;
-background: transparent;
-color: white;
-height: 40px;
-outline: none;
-}
-.login-box input[type="submit"]{
-border: none;
-background: #1c8adb;
-color: #fff;
-height: 40px;
-width: 300px;
-font-size:18px;
-border-radius: 20px;
-}
-.formCadastro button[type="submit"]{
-border: none;
-background: #1c8adb;
-color: #fff;
-height: 40px;
-width: 300px;
-font-size:18px;
-margin-left: 150px;
-border-radius: 20px;
-}
-
-
-.login-box input[type="submit"]:hover,.formCadastro button[type="submit"]:hover{
-cursor: pointer;
-background: #39dc79;
-color: #000;
-}
-
-
-.login-box a{
-	text-decoration: none;
-	color: white;
-	font-size: 16px;
-
-}
-.login-box a:hover{
-	cursor: pointer;
-	color: #1c8adb;
+.formCadastro{
+	position: absolute;
+	top: 70px;	
+	width: 600px;
+	height: 640px;
+	background-color: rgba(0,0,0,0.5);
+	left: 400px;
+	float: center;
 	
 }
+
+
+.formCadastro h2,.telaprincipal-left h2{
+	color: white;
+	text-align: center;
+}
+
 .formCadastro label{
 	
 	border:0;
@@ -99,23 +45,66 @@ color: #000;
 	margin-left: 50px;
 	color: white;
 	height: 20px;
+	font-size: 14px;
 }
+
 .formCadastro input[type="text"]{
-height: 30px;
+height: 20px;
 margin-left: 50px;
 }
 .formCadastro input[type="text"]:hover{
 background-color: #BEBEBE;
 color: black;
+;
 }
-.formCadastro{
-background: rgba(0, 0, 0,0.2);
-color: #fff;
-position: absolute;
-width: 50%;
-top:100px;
-left: 300px;	
-}
+.formCadastro button[type="submit"]{
+	border: none;
+	background: #1c8adb;
+	color: #fff;
+	height: 40px;
+	width: 300px;
+	font-size:18px;
+	margin-left: 150px;
+	border-radius: 20px;
+	}
+	.formCadastro button[type="submit"]:hover{
+		background: #39dc79;
+		padding: 10px;
+	}
+	.formCadastro img{
+		position: absolute;
+		width: 24px;
+		top: 5px;
+	}
+	#email{
+	width: 300px;
+	text-align: center;
+	}
+	.telaprincipal{
+		position: absolute;
+		background: rgba(0, 0, 0,0.5);
+		height: 100%;
+		float: center;
+		top: 100px;
+		left: 20%;
+		right: 20%;
+		}.telaprincipal h1{
+			text-shadow: 6px 6px 6px black;
+			cursor: default;	
+			text-align: center;
+			color: white;
+		}
+		.telaprincipal p{
+			color: white;
+			word-spacing: 3px;
+			font-family: calibri;
+			line-height: 30px;
+		}
+		.telaprincipal ul li{
+			color: white;
+			background: #9999;
+			line-height: 40px;
+		}
 .footer{
 	background-color: rgba(0,0,0,0.5);
 	position: absolute;
@@ -123,4 +112,116 @@ left: 300px;
 	width: 100%;
 	color: gray;
 	height: 50px;
+}
+.login-box,.loginCadastro-box{
+	width: 520px;
+	height: 500px;
+	background: rgba(0, 0, 0,0.5);
+	left: 400px;
+	top:20%;
+	position: absolute;
+	text-align: center;
+	 /* transform: translate(-50%,-50%);	 */
+}
+h3{
+	color: white;	
+}
+.login-box form {
+margin: 60px;
+}
+.login-box h2,.telaprincipal-left h2{
+	text-shadow: 2px 4px 16px black;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+}
+.login-box form p,.loginCadastro-box form p{
+	text-align: center;
+	font-size: 15px;
+	color: white;
+	margin: 10px;
+}
+.login-box form a{
+padding: 0;
+margin-left: 0px;
+}
+.login-box input,[type="password"],[type="text"]{
+border: none;
+border-bottom: 1px solid #fff;
+background: transparent;
+color: white;
+height: 40px;
+outline: none;
+	}
+.login-box input[type="submit"],.loginCadastro-box input[type="submit"]{
+border: none;
+background: #1c8adb;
+color: #fff;
+height: 40px;
+width: 300px;
+font-size:18px;
+border-radius: 20px;
+
+}
+.login-box input[type="submit"]:hover,.loginCadastro-box input[type="submit"]:hover{
+cursor: pointer;
+background: #39dc79;
+color: #000;
+	}
+.login-box a{
+	text-decoration: none;
+	color: white;
+	font-size: 16px;
+}
+.login-box a:hover{
+cursor: pointer;
+color: #1c8adb;	
+}
+
+.telaprincipal-left{
+	position: relative;
+	width: 250px;
+	height: 100%;
+	background: rgba(0, 0, 0,0.5);
+	top: 100px;
+	float: left;
+	
+}.telaprincipal-left p{
+	color: white;
+}
+
+.telaprincipal-left #entrar{
+	position: relative;
+	top: -20px;
+	left: 50px;
+	width: 150px;
+	border: none;
+	font-size: 14px;
+	border-radius: 6px;
+
+}.telaprincipal-left #entrar:hover{
+	cursor: pointer;
+	background: #39dc79;
+	color: #000;
+}
+
+#imagensLogo{
+text-align: center;
+
+}
+
+#contatoEscolhido table thead tr{
+	background: whitesmoke;
+	color: #1c8adb;
+	
+}
+
+#contatoEscolhido table {
+	position: absolute;
+	background: whitesmoke;
+	color: black;
+	font-family: arial;
+	font-size: 14px;
+
+
 }

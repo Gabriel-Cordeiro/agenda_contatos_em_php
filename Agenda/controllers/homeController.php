@@ -4,16 +4,17 @@
 class homeController
 {
 
-  function loginView()
+  function TelaPrincipalView()
   {
-      header('Location: Views/login.php');
+    header('Location: Views/telaprincipal.php');
+      
   }
 
   function homeView($id_usuario)
   {
     session_start();
     $_SESSION['id_usuario'] = $id_usuario;
-    header('Location: ../Views/home.php');
+    header('Location: ../Views/novoContato.php');
   
   }
 

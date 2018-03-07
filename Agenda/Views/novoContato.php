@@ -8,10 +8,7 @@
 <link rel="stylesheet" href="../css/main.css"> 
 <link rel="icon" href="../img/contact.ico" >
 <?php include('../php/Header.php'); ?>
-    <title> Bem vindo </title>
     
-    
-
 <body>
 
   <?php
@@ -20,10 +17,11 @@ $id_usuario = $_SESSION['id_usuario']; //coloco em $erro os dados da sessao..
 ?>
 
 
-
 <form method="POST" action="../controllers/novoContatoController.php" class="formCadastro">
   <!-- <div class="form-row"> </div> -->
     <h2> Cadastro de contatos:</h2>
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+
         <div class="form-group col-md-9">
           <label for="inputEmail4">Nome</label> 
           <input type="text" class="form-control" id="nome_contato" placeholder="Nome" name="nome_contato">
@@ -56,12 +54,20 @@ $id_usuario = $_SESSION['id_usuario']; //coloco em $erro os dados da sessao..
           <label for="inputCity">CEP</label>
           <input type="text" class="form-control" id="cep" placeholder="13175-342" name= "cep_contato">
       </div>
-      <button type="submit" class="btn btn-primary">Cadastrar</button>
+      <div class="form-group col-md-9">
+          <label for="inputCity">Whatsapp</label>
+          <input type="text" class="form-control" id="cep" placeholder="00-000000000" name= "whatsapp">
+          <img src="../img/wpp.jpg">
+      </div>
+      <div class="form-group col-md-9">
+          <label for="inputCity">Link: Facebook</label>
+          <input type="text" class="form-control" id="cep" placeholder="@facebook" name= "facebook">
+          <img src="../img/fb.jpg">
+      </div>
 </form>
 
-
-
-
+  </form>
+  
 
 </body>
 

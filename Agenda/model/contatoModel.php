@@ -25,7 +25,7 @@ class contato {
 
          if(mysqli_affected_rows($connect->myCon) > 0)
          {
-            echo"<script language='javascript' type='text/javascript'>alert('Cadastro efetuado com sucesso');window.location.href='../Views/home.php';</script>";
+            echo"<script language='javascript' type='text/javascript'>alert('Cadastro efetuado com sucesso');window.location.href='../Views/contatos.php';</script>";
             $connect->fechar();
          }
          else
