@@ -35,7 +35,7 @@ if(!empty($contatos))
 {
 foreach($contatos as $contato){
   ?>
-<form method="post" id="contatoEscolhido" action="../controllers/contatoController.php">
+<form method="POST" id="contatoEscolhido" action="../controllers/contatoController.php">
 <table class="table table-dark">
   <thead>
 
@@ -51,12 +51,11 @@ foreach($contatos as $contato){
   <tbody>
     <tr>
       <th><img src="../img/avatar.png" alt="Smiley face"><?php echo $contato->id_contato?></th>
-      <td><?php echo $contato->nome?></td>
+      <td ><?php echo $contato->nome?></td>
       <td><?php echo $contato->sobrenome?></td>
       <td><?php echo $contato->telefone?></td>
       <td><?php echo $contato->email?></td>
-      <td><button type="submit" class="btn btn-primary" value="<?php echo $contato->id_contato?>">Mais informações</button></td>
-    </tr>
+      <td><input type="text" class="btn btn-primary" name="id_contato" value="<?php echo $contato->id_contato?>">Mais informações</button></td>    </tr>
   </tbody>
 </table>
 </form>
