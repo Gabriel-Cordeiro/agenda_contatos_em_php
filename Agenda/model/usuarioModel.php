@@ -10,7 +10,7 @@ class usuario
         $verifica = mysqli_query($connect->myCon,"SELECT * FROM usuarios WHERE login = '$login' AND senha = '$senha'") or die("erro ao selecionar");
         
         if (mysqli_num_rows($verifica)<=0){
-            echo"<script language='javascript'type='text/javascript'>alert('Login e/ou senha incorretos');window.location.href='../Views/login.php';</script>";
+            echo"<script language='javascript'type='text/javascript'>alert('Login e/ou senha incorretos');window.location.href='../Views/telaprincipal.php';</script>";
             die();
           }else{
            

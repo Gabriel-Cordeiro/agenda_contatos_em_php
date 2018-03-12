@@ -2,10 +2,11 @@
 
 <head>
     
-    <title> Login de Usuário </title>
+    <title> Cadastro </title>
     <link rel="stylesheet" href="../css/bootstrap.min.css"> 
     <link rel="stylesheet" href="../css/main.css"> 
     <link rel="icon" href="../img/contact.ico" >
+    <?php include('../php/HeaderInicio.php'); ?>
    
 </head>
 

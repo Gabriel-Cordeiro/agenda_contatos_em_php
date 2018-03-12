@@ -26,18 +26,22 @@ $id_usuario = $_SESSION['id_usuario']; //coloco em $erro os dados da sessao..
           <label for="inputEmail4">Nome</label> 
           <input type="text" class="form-control" id="nome_contato" placeholder="Nome" name="nome_contato">
         </div>
+
         <div class="form-group col-md-9">
           <label for="inputPassword4">Sobrenome</label>
           <input type="text" class="form-control" id="sobrenome_contato" placeholder="Sobrenome" name ="sobrenome_contato">
         </div>
+
         <div class="form-group col-md-9">
           <label for="inputAddress">E-mail</label>
           <input type="text" class="form-control" id="email_contato" placeholder="teste@gmail.com" name="email_contato">
         </div>
+
         <div class="form-group col-md-9">
           <label for="inputAddress">Telefone</label>
           <input type="text" class="form-control" id="telefone_contato" placeholder="19 967453214" name="telefone_contato">
         </div>
+        
         <div class="form-group col-md-9">
           <label for="inputAddress">Endereço</label>
           <input type="text" class="form-control" id="endereco_contato" placeholder="Rua José Paulino" name="endereco_contato">
@@ -64,6 +68,7 @@ $id_usuario = $_SESSION['id_usuario']; //coloco em $erro os dados da sessao..
           <input type="text" class="form-control" id="cep" placeholder="@facebook" name= "facebook">
           <img src="../img/fb.jpg">
       </div>
+      
 </form>
 
   </form>

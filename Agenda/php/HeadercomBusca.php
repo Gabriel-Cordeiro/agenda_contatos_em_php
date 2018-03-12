@@ -6,9 +6,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-
-     
+    <ul class="navbar-nav ">
 
       <li class="nav-item">
         <a class="nav-link" href="../Views/novoContato.php">Novo Contato</a>
@@ -17,8 +15,8 @@
       <li class="nav-item">
         <a class="nav-link" href="../Views/contatos.php">Contatos</a>
       </li>
-      <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Digite um nome para buscar contato" aria-label="Search">
+      <form class="form-inline my-2 my-lg-0 " id="formSearch">
+      <input class="form-control mr-sm-2" type="search" placeholder="Digite um nome para buscar contato" aria-label="Search" size="50" >
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
 
