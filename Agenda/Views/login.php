@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css"> 
     <link rel="stylesheet" href="../css/main.css"> 
     <link rel="icon" href="../img/contact.ico" >
-    <?php include('../php/Header.php'); ?>
+    <?php include('../php/HeaderInicio.php'); ?>
 </head>
 
 <body> 
@@ -25,7 +25,6 @@
         <a href="CadastroUsuario.php"> Clique aqui: para um Novo cadastro</a>
     </form>
 </div>
-
 
 <div class="footer">
  <p> Desenvolvedores: Deybson Ferreira, Gabriel Cordeiro,Igor Gomes </br>

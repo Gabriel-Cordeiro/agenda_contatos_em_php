@@ -25,7 +25,6 @@ else
 {
 //popula objeto contato
  $novoCliente = new contato;
- $novoCliente->id_cliente =$_POST['id_cliente'];
  $novoCliente->id_usuario =intval($_SESSION['id_usuario']);
  $novoCliente->nome = $_POST['nome_contato']; 
  $novoCliente->sobrenome =$_POST['sobrenome_contato'];
