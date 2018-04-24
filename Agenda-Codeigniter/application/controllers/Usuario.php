@@ -89,7 +89,9 @@ class Usuario extends CI_Controller {
 			'nome'=> $_POST['nome']
 			 );
 
-		 	$this->Usuario_model->inserirUsuario($usuario);
+			 $this->Usuario_model->inserirUsuario($usuario);
+			 $this->load->view('Usuarios/CadastroRealizado');
+
 		}	
 
 	}
